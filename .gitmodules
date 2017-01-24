@@ -61,3 +61,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule "bundle/vim-sqf"]
+	path = bundle/vim-sqf
+	url = git@github.com:KoffeinFlummi/vim-sqf.git
