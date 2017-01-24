@@ -20,6 +20,7 @@ map <Leader>zz :ZoomWin<CR>
 map <Leader>t :CtrlP<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F9> :NERDTree<CR>
+map <leader>d :NERDTreeFind<cr>
 
 vnoremap <leader>gg y:Ggrep <c-r>"<cr>
 
