@@ -12,6 +12,7 @@ set mouse=a
 set cul cuc
 
 set tags+=.git/tags
+set tags+=gems.tags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <Leader>re :!ruby -rubygems ~/bundler-tags.rb<CR>
 
