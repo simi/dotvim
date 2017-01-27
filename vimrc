@@ -39,7 +39,11 @@ set softtabstop=2
 set kp=ri
 
 set secure
-set backupdir=/tmp
+
+if has("gui_win32")
+else
+  set backupdir=/tmp
+endif
 
 set scrolloff=2
 set laststatus=2
