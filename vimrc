@@ -19,7 +19,7 @@ map <Leader>re :!ruby -rubygems ~/bundler-tags.rb<CR>
 map <Leader>zz :ZoomWin<CR>
 map <Leader>t :CtrlP<CR>
 nmap <F8> :TagbarToggle<CR>
-nmap <F9> :NERDTree<CR>
+nmap <F9> :NERDTreeToggle<CR>
 map <leader>d :NERDTreeFind<cr>
 
 vnoremap <leader>gg y:Ggrep <c-r>"<cr>
