@@ -64,3 +64,6 @@
 [submodule "bundle/vim-sqf"]
 	path = bundle/vim-sqf
 	url = git@github.com:KoffeinFlummi/vim-sqf.git
+[submodule "bundle/taboo.vim"]
+	path = bundle/taboo.vim
+	url = git@github.com:gcmt/taboo.vim.git
