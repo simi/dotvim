@@ -61,3 +61,5 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 endif
+
+let g:sql_type_default = 'pgsql'
