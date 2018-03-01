@@ -67,3 +67,9 @@
 [submodule "bundle/taboo.vim"]
 	path = bundle/taboo.vim
 	url = git@github.com:gcmt/taboo.vim.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/vim-ember-hbs"]
+	path = bundle/vim-ember-hbs
+	url = https://github.com/joukevandermaas/vim-ember-hbs.git
