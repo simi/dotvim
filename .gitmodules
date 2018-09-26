@@ -79,3 +79,6 @@
 [submodule "bundle/Jenkinsfile-vim-syntax"]
 	path = bundle/Jenkinsfile-vim-syntax
 	url = git@github.com:martinda/Jenkinsfile-vim-syntax.git
+[submodule "bundle/vimwiki"]
+	path = bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git

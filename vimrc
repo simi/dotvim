@@ -5,6 +5,7 @@ filetype plugin indent on
 let mapleader = ","
 color jellybeans
 
+set nocompatible
 set relativenumber
 set ruler
 
@@ -14,7 +15,7 @@ set cul cuc
 set tags+=.git/tags
 set tags+=gems.tags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
-map <Leader>re :!ruby -rubygems ~/bundler-tags.rb<CR>
+map <Leader>re :!ctags -f gems.tags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)<CR>
 
 map <Leader>zz :ZoomWin<CR>
 map <Leader>t :CtrlP<CR>
@@ -40,10 +41,7 @@ set kp=ri
 
 set secure
 
-if has("gui_win32")
-else
-  set backupdir=/tmp
-endif
+set backupdir=$TEMP,$TMP,.
 
 set scrolloff=2
 set laststatus=2
