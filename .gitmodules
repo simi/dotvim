@@ -82,3 +82,9 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git@github.com:tpope/vim-markdown.git
+[submodule "bundle/vim-grepper"]
+	path = bundle/vim-grepper
+	url = https://github.com/mhinz/vim-grepper.git

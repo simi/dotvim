@@ -61,3 +61,25 @@ if has("gui_running")
 endif
 
 let g:sql_type_default = 'pgsql'
+let g:vimwiki_global_ext = 0
+let g:vimwiki_list = [
+  \ {
+  \   'nested_syntaxes': {'ruby': 'ruby', 'bash': 'bash'},
+  \   'syntax': 'markdown',
+  \   'ext': '.md',
+  \   'path': '~/vimwiki'
+  \ }
+\ ]
+
+let g:markdown_fenced_languages=[
+      \ 'bash=sh',
+      \ 'css',
+      \ 'erb=eruby',
+      \ 'haskell',
+      \ 'html',
+      \ 'javascript',
+      \ 'latex=tex',
+      \ 'python',
+      \ 'ruby',
+      \ 'pgsql',
+      \ ]
