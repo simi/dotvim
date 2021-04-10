@@ -83,3 +83,4 @@ let g:markdown_fenced_languages=[
       \ 'ruby',
       \ 'pgsql',
       \ ]
+let g:htl_css_templates = 1
