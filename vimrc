@@ -55,6 +55,8 @@ if has("gui_running")
   :set guioptions-=r  "remove right-hand scroll bar
   :set guioptions-=L
 
+  set guifont="Liberation Mono 10"
+
   if has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
@@ -64,7 +66,7 @@ let g:sql_type_default = 'pgsql'
 let g:vimwiki_global_ext = 0
 let g:vimwiki_list = [
   \ {
-  \   'nested_syntaxes': {'ruby': 'ruby', 'bash': 'bash'},
+  \   'nested_syntaxes': {'ruby': 'ruby', 'bash': 'sh', 'scala': 'scala', 'sql': 'sql'},
   \   'syntax': 'markdown',
   \   'ext': '.md',
   \   'path': '~/vimwiki'
