@@ -106,3 +106,6 @@
 [submodule "bundle/vim-html-template-literals"]
 	path = bundle/vim-html-template-literals
 	url = https://github.com/jonsmithers/vim-html-template-literals.git
+[submodule "bundle/vim-terraform"]
+	path = bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
