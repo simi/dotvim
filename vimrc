@@ -1,3 +1,4 @@
+let g:pathogen_disabled = ['ale']
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -14,8 +15,8 @@ set cul cuc
 
 set tags+=.git/tags
 set tags+=gems.tags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
-map <Leader>re :!ctags -f gems.tags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)<CR>
+map <Leader>rt :!ctags --exclude=node_modules --extra=+f -R *<CR><CR>
+map <Leader>re :!ctags -f gems.tags -R --languages=ruby --exclude=node_modules --exclude=.git --exclude=log . $(bundle list --paths)<CR>
 
 map <Leader>zz :ZoomWin<CR>
 map <Leader>t :CtrlP<CR>
@@ -41,7 +42,8 @@ set kp=ri
 
 set secure
 
-set backupdir=$TEMP,$TMP,.
+set backupdir=/tmp
+set directory=/tmp
 
 set scrolloff=2
 set laststatus=2
@@ -55,8 +57,7 @@ if has("gui_running")
   :set guioptions-=r  "remove right-hand scroll bar
   :set guioptions-=L
 
-  set guifont="Liberation Mono 10"
-
+  set guifont=DejaVu\ Sans\ Mono
   if has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
@@ -84,5 +85,14 @@ let g:markdown_fenced_languages=[
       \ 'python',
       \ 'ruby',
       \ 'pgsql',
+      \ 'sql',
+      \ 'scala',
       \ ]
+
+let g:ale_set_highlights = 0
 let g:htl_css_templates = 1
+set path+=/home/retro/code/work/oss/postgres/src/include
+
+set re=1 "avoid slow regexp engine
+
+let g:snipMate = { 'snippet_version' : 1 }
