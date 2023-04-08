@@ -96,3 +96,6 @@ set path+=/home/retro/code/work/oss/postgres/src/include
 set re=1 "avoid slow regexp engine
 
 let g:snipMate = { 'snippet_version' : 1 }
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
